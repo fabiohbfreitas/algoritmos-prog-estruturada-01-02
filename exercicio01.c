@@ -1,0 +1,35 @@
+#include "utils.h"
+
+int read_positive_integer(const char text_prompt[],const char error_msg[]);
+
+int main() {
+    int product_cost = read_positive_integer(
+        "Digite o custo do produto: ", 
+        "O custo deve ser um preço válido.\n"
+        );
+
+    int shipping_cost = read_positive_integer(
+        "Digite o custo do frete: ", 
+        "O custo deve ser um preço válido."
+        );
+
+    int other_cost = read_positive_integer(
+        "Digite o preço de outros custos: ", 
+        "O custo deve ser um preço válido."
+    );
+
+    int selling_price = read_positive_integer(
+        "Digite o preço de venda: ", 
+        "Digite um preço válido."
+    );
+
+    int total_cost = product_cost + shipping_cost + other_cost;
+    int profit = selling_price - total_cost;
+    float profit_margin = ((float) profit) / ((float) selling_price);
+    
+    system("clear");
+    printf("Lucro: %d | Margen de Lucro: %.2f%%\n", profit, profit_margin * 100);
+
+    return 0;
+}
+
