@@ -24,7 +24,9 @@ int main() {
     );
 
   const float total_area = wall_height * wall_width;
-  const float used_paint_volume_ml = (float) total_area * PAINT_VOLUME_PER_SQUARE_METER;
+  printf("%.4f\n", total_area);
+
+  const float used_paint_volume_ml = (float) total_area * (float) PAINT_VOLUME_PER_SQUARE_METER;
 
   float paint_cans = ceilf(used_paint_volume_ml / PAINT_CAN_VOLUME_ML);
 
