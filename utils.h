@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <locale.h>
 
 #ifndef UTILS__H
 #define UTILS__H

@@ -7,6 +7,8 @@
 // valor do novo salário. 
 
 int main() {
+  setlocale(LC_ALL, "Portuguese");
+
   const int salary = read_positive_integer(
       "Digite o valor do salário: ", 
       "Insira um valor de salário válido."

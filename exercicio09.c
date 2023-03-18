@@ -9,6 +9,8 @@
 
 
 int main() {
+  setlocale(LC_ALL, "Portuguese");
+
   const int grades_weight[3] = {2, 3, 5};
 
   int partial_final_grade = 0;
@@ -26,6 +28,7 @@ int main() {
     partial_final_grade += current_weight * nth_grade;
   }
   const float final_grade = (float) partial_final_grade / partial_weight;
+  
   clear_terminal();
   printf("A nota final é: %.2f\n", final_grade);
 

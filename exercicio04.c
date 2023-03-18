@@ -7,6 +7,8 @@
 
 
 int main() {
+  setlocale(LC_ALL, "Portuguese");
+
   const int rect_width = read_positive_integer(
       "Digite o valor da base do retângulo: ", 
       "Insira um valor válido para a base do retângulo."

@@ -12,6 +12,8 @@
 #define PAINT_VOLUME_PER_SQUARE_METER 300
 
 int main() {
+  setlocale(LC_ALL, "Portuguese");
+  
   const int wall_width =read_positive_integer(
       "Digite a largura da parede(metros): ", 
       "Digite um valor válido para a largura."

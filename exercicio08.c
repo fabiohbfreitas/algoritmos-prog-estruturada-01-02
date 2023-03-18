@@ -12,6 +12,8 @@
 #define SALES_COMMISSION_PERCENTUAL 0.05
 
 int main() {
+  setlocale(LC_ALL, "Portuguese");
+
   const int car_number = read_positive_integer(
     "Digite o número de carros vendidos: ", 
       "Insira um número de carros válido."

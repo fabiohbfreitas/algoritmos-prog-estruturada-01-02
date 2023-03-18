@@ -10,6 +10,8 @@
 #define DAYS_IN_MONTH 30
 
 int main() {
+  setlocale(LC_ALL, "Portuguese");
+
   const int age_years = read_positive_integer(
     "Digite a quantidade de anos: ", 
       "Insira uma quantidade de anos válida."

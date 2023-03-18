@@ -12,6 +12,8 @@
 #define TAXES_PERCENTUAL 0.45
 
 int main() {
+  setlocale(LC_ALL, "Portuguese");
+
   const int car_factory_cost = read_positive_integer(
       "Digite o custo de fábrica do carro: ", 
       "Digite um custo válido."

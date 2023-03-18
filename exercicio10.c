@@ -3,12 +3,16 @@
 #include <stdlib.h>
 
 int main() {
+  setlocale(LC_ALL, "Portuguese");
+
   int a_value = read_integer("Digite o valor do coeficiente a: ", 1, "O valor de a não pode ser zero.");
   int b_value = read_integer("Digite o valor do coeficiente b: ", 0, "");
   int c_value = read_integer("Digite o valor do coeficiente c: ", 0, "");
+  
   clear_terminal();
   double discriminant = (b_value * b_value) - (4 * a_value * c_value);
   float result[2];
+  
   if (discriminant < 0) {
     printf("A equação não possui soluções no conjunto dos números reais.\n");
   } else if (discriminant == 0) {

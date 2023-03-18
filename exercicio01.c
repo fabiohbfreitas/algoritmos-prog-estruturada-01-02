@@ -1,4 +1,5 @@
 #include "utils.h"
+#include <locale.h>
 
 // 1.Faça um programa em que o usuário digite o custo de uma determinada 
 //  mercadoria, em seguida, adiciona-se ao custo o valor do frete e despesas 
@@ -7,9 +8,9 @@
 //  mercadoria.
 
 
-int read_positive_integer(const char text_prompt[],const char error_msg[]);
-
 int main() {
+    setlocale(LC_ALL, "Portuguese");
+    
     int product_cost = read_positive_integer(
         "Digite o custo do produto: ", 
         "O custo deve ser um preço válido.\n"
