@@ -9,7 +9,7 @@
 int main() {
   setlocale(LC_ALL, "Portuguese");
 
-  const int salary = read_positive_integer(
+  const float salary = read_positive_float(
       "Digite o valor do salário: ", 
       "Insira um valor de salário válido."
     );
