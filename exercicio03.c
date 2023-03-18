@@ -1,4 +1,5 @@
 #include "utils.h"
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -27,14 +28,10 @@ int main() {
   const float total_area = wall_height * wall_width;
   const float used_paint_volume_ml = (float) total_area * PAINT_VOLUME_PER_SQUARE_METER;
 
-  int paint_cans = used_paint_volume_ml / PAINT_CAN_VOLUME_ML;
+  float paint_cans = roundf(used_paint_volume_ml / PAINT_CAN_VOLUME_ML);
 
-  if ( ((int)used_paint_volume_ml % PAINT_CAN_VOLUME_ML) > 0) {
-    paint_cans += 1;
-  }
-  
   clear_terminal();
-  printf("O Total de latas de tinta é: %d\n", paint_cans);
+  printf("O Total de latas de tinta é: %d\n", (int)paint_cans);
 
   return EXIT_SUCCESS;
 }
