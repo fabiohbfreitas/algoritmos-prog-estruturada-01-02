@@ -9,17 +9,17 @@
 int main() {
   setlocale(LC_ALL, "Portuguese");
 
-  const int rect_width = read_positive_integer(
+  const float rect_width = read_positive_float(
       "Digite o valor da base do retângulo: ", 
       "Insira um valor válido para a base do retângulo."
     );
-  const int rect_height = read_positive_integer(
+  const float rect_height = read_positive_float(
       "Digite o valor da altura do retângulo: ", 
       "Insira um valor válido para a altura do retângulo."
     );
   clear_terminal();
-  const int rect_area = rect_height * rect_width;
-  printf("A área do retângulo é %d\n", rect_area);
+  const float rect_area = rect_height * rect_width;
+  printf("A área do retângulo é %.2f\n", rect_area);
 
   return 0;
 }
