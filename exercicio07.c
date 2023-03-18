@@ -1,6 +1,5 @@
 #include "utils.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 
 // 7. O custo de um carro novo ao consumidor é a soma do custo de 
 // fábrica com a porcentagem do distribuidor e dos impostos 

@@ -1,6 +1,5 @@
 #include "utils.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 
 // 6. Escreva um algoritmo para ler o salário mensal atual de um 
 // funcionário e o percentual de reajuste. Calcular e escrever o 

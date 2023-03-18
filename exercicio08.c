@@ -1,6 +1,5 @@
 #include "utils.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 
 // 8. Uma revendedora de carros usados paga a seus funcionários 
 // vendedores um salário fixo por mês, mais uma comissão também 

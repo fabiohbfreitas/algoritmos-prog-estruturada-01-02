@@ -1,7 +1,5 @@
 #include "utils.h"
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
+
 
 // 3.Faça um programa que calcule a quantidade 
 // necessária de latas de tinta para pintar uma parede. O programa 
@@ -28,7 +26,7 @@ int main() {
   const float total_area = wall_height * wall_width;
   const float used_paint_volume_ml = (float) total_area * PAINT_VOLUME_PER_SQUARE_METER;
 
-  float paint_cans = roundf(used_paint_volume_ml / PAINT_CAN_VOLUME_ML);
+  float paint_cans = ceilf(used_paint_volume_ml / PAINT_CAN_VOLUME_ML);
 
   clear_terminal();
   printf("O Total de latas de tinta é: %d\n", (int)paint_cans);

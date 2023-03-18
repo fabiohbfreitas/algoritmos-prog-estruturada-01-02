@@ -1,6 +1,5 @@
 #include "utils.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 
 // 9. Faça um algoritmo que leia três notas de um aluno, 
 // calcule e escreva a média final deste aluno. Considerar que 

@@ -1,6 +1,5 @@
 #include "utils.h"
-#include <locale.h>
-#include <stdlib.h>
+
 
 // 1.Faça um programa em que o usuário digite o custo de uma determinada 
 //  mercadoria, em seguida, adiciona-se ao custo o valor do frete e despesas 
