@@ -15,21 +15,24 @@
 int main() {
   setlocale(LC_ALL, "Portuguese");
   
-  const int wall_width =read_positive_integer(
+  const float wall_width = read_positive_float(
       "Digite a largura da parede(metros): ", 
       "Digite um valor válido para a largura."
     );
-  const int wall_height =read_positive_integer(
+  const float wall_height = read_positive_float(
       "Digite a altura da parede(metros): ", 
       "Digite um valor válido para a altura."
     );
 
-  const int total_area = wall_height * wall_width;
+  const float total_area = wall_height * wall_width;
   const float used_paint_volume_ml = (float) total_area * PAINT_VOLUME_PER_SQUARE_METER;
+
   int paint_cans = used_paint_volume_ml / PAINT_CAN_VOLUME_ML;
+
   if ( ((int)used_paint_volume_ml % PAINT_CAN_VOLUME_ML) > 0) {
     paint_cans += 1;
   }
+  
   clear_terminal();
   printf("O Total de latas de tinta é: %d\n", paint_cans);
 
