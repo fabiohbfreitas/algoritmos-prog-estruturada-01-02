@@ -74,6 +74,24 @@ float read_percentual(const char text_prompt[],const char error_msg[])
     return readed_value;
 }
 
+float read_positive_float(const char text_prompt[],const char error_msg[])
+{
+    clear_terminal();
+    float readed_value = 0;
+    do
+    {
+        printf("%s", text_prompt);
+        scanf("%f", &readed_value);
+        if (readed_value < 0) {
+            clear_terminal();
+            printf("[ERRO] %s\n", error_msg);
+        }
+    }
+    while (readed_value < 0);
+
+    return readed_value;
+}
+
 
 
 #endif
