@@ -29,5 +29,5 @@ int main() {
   const int total_age_in_days = age_years * DAYS_IN_YEAR + age_months * DAYS_IN_MONTH + age_days;
   printf("A idade em dias é %d.\n", total_age_in_days);
 
-  return 0;
+  return EXIT_SUCCESS;
 }

@@ -1,5 +1,6 @@
 #include "utils.h"
 #include <math.h>
+#include <stdlib.h>
 
 #define PI 3.1415
 
@@ -18,5 +19,5 @@ int main() {
   const float circle_area =  PI * (float) pow(circle_radius, 2.0);
   printf("A área do círculo é: %.2f\n", circle_area);
 
-  return 0;
+  return EXIT_SUCCESS;
 }

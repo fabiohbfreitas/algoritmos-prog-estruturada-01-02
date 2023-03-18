@@ -14,14 +14,20 @@ int main() {
   float result[2];
   
   if (discriminant < 0) {
+
     printf("A equação não possui soluções no conjunto dos números reais.\n");
+
   } else if (discriminant == 0) {
+
     result[0] = ((float) (-1 * b_value)) / (2 * a_value);
     printf("A equação possui apenas uma solução: %.2f\n", result[0]);
+
   } else {
+
     result[0] = ((-1 * b_value) + (float) sqrt(discriminant)) / (2 * a_value);
     result[1] = ((-1 * b_value) - (float) sqrt(discriminant)) / (2 * a_value);
     printf("A equação possui duas soluções: %.2f e %.2f\n", result[0], result[1]);
+    
   }
 
   return EXIT_SUCCESS;

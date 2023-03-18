@@ -1,5 +1,6 @@
 #include "utils.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 // 3.Faça um programa que calcule a quantidade 
 // necessária de latas de tinta para pintar uma parede. O programa 
@@ -32,5 +33,5 @@ int main() {
   clear_terminal();
   printf("O Total de latas de tinta é: %d\n", paint_cans);
 
-  return 0;
+  return EXIT_SUCCESS;
 }

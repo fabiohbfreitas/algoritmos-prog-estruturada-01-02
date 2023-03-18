@@ -1,5 +1,6 @@
 #include "utils.h"
 #include <locale.h>
+#include <stdlib.h>
 
 // 1.Faça um programa em que o usuário digite o custo de uma determinada 
 //  mercadoria, em seguida, adiciona-se ao custo o valor do frete e despesas 
@@ -38,6 +39,6 @@ int main() {
     clear_terminal();
     printf("Lucro: R$%.2f | Margen de Lucro: %.2f%%\n", profit, profit_margin * 100);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 
