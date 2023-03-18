@@ -10,7 +10,7 @@
 int main() {
   setlocale(LC_ALL, "Portuguese");
   
-  int circle_radius = read_positive_integer(
+  float circle_radius = read_positive_float(
       "Digite o raio do círculo: ", 
       "Digite um valor válido para o raio."
     );
