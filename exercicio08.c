@@ -27,7 +27,7 @@ int main() {
       "Insira um salário válido."
     );
   const int commission_per_car = read_positive_integer(
-    "Digite o valor da comissão por carro: ", 
+    "Digite o valor da comissão por carro: ",
       "Insira uma comissão válida."
     );
 
