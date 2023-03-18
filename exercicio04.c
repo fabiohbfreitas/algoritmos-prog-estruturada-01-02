@@ -15,7 +15,7 @@ int main() {
       "Digite o valor da altura do retângulo: ", 
       "Insira um valor válido para a altura do retângulo."
     );
-  system("clear");
+  clear_terminal();
   const int rect_area = rect_height * rect_width;
   printf("A área do retângulo é %d\n", rect_area);
 

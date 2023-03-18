@@ -19,6 +19,7 @@ int main() {
   const int total_tax = car_factory_cost * TAXES_PERCENTUAL;
   const int distributor_cost = car_factory_cost * DISTRIBUTOR_PERCENTUAL;
   const int car_final_price = car_factory_cost + distributor_cost + total_tax;
+  clear_terminal();
   printf("O custo final do carro é R$%d\n", car_final_price);
   return 0;
 }

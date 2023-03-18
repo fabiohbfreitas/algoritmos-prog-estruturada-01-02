@@ -27,6 +27,7 @@ int main() {
   if ( ((int)used_paint_volume_ml % PAINT_CAN_VOLUME_ML) > 0) {
     paint_cans += 1;
   }
+  clear_terminal();
   printf("O Total de latas de tinta é: %d\n", paint_cans);
 
   return 0;

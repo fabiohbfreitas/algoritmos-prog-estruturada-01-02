@@ -24,12 +24,13 @@ int main() {
     "Digite o valor do salário fixo: ", 
       "Insira um salário válido."
     );
-  const int commission_per_car = read_positive_integer(
+  const float commission_per_car = read_percentual(
     "Digite o valor da comissão por carro: ", 
       "Insira uma comissão válida."
     );
 
   const float total_salary = fixed_salary + (car_number * commission_per_car) + (SALES_COMMISSION_PERCENTUAL * total_sales_value);
+  clear_terminal();
   printf("O salário final é R$%.2f\n",total_salary);
   return 0;
 }

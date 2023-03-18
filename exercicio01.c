@@ -34,7 +34,7 @@ int main() {
     int profit = selling_price - total_cost;
     float profit_margin = ((float) profit) / ((float) selling_price);
     
-    system("clear");
+    clear_terminal();
     printf("Lucro: %d | Margen de Lucro: %.2f%%\n", profit, profit_margin * 100);
 
     return 0;
