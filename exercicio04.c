@@ -21,5 +21,5 @@ int main() {
   const float rect_area = rect_height * rect_width;
   printf("A área do retângulo é %.2f\n", rect_area);
 
-  return 0;
+  return EXIT_SUCCESS;
 }

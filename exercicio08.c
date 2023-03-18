@@ -1,5 +1,6 @@
 #include "utils.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 // 8. Uma revendedora de carros usados paga a seus funcionários 
 // vendedores um salário fixo por mês, mais uma comissão também 
@@ -34,5 +35,6 @@ int main() {
   const float total_salary = fixed_salary + (car_number * commission_per_car) + (SALES_COMMISSION_PERCENTUAL * total_sales_value);
   clear_terminal();
   printf("O salário final é R$%.2f\n",total_salary);
-  return 0;
+
+  return EXIT_SUCCESS;
 }

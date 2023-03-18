@@ -1,5 +1,6 @@
 #include "utils.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 // 7. O custo de um carro novo ao consumidor é a soma do custo de 
 // fábrica com a porcentagem do distribuidor e dos impostos 
@@ -23,5 +24,5 @@ int main() {
   const float car_final_price = car_factory_cost + distributor_cost + total_tax;
   clear_terminal();
   printf("O custo final do carro é R$%.2f\n", car_final_price);
-  return 0;
+  return EXIT_SUCCESS;
 }

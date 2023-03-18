@@ -20,5 +20,5 @@ int main() {
   clear_terminal();
   const float salary_adjusted = salary * (1+salary_adjustment_percentual);
   printf("O salário reajustado é R$%.2f\n", salary_adjusted);
-  return 0;
+  return EXIT_SUCCESS;
 }

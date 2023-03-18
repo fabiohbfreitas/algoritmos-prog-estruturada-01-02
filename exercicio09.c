@@ -1,5 +1,6 @@
 #include "utils.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 // 9. Faça um algoritmo que leia três notas de um aluno, 
 // calcule e escreva a média final deste aluno. Considerar que 
@@ -32,5 +33,5 @@ int main() {
   clear_terminal();
   printf("A nota final é: %.2f\n", final_grade);
 
-  return 0;
+  return EXIT_SUCCESS;
 }
