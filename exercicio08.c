@@ -18,11 +18,11 @@ int main() {
     "Digite o número de carros vendidos: ", 
       "Insira um número de carros válido."
     );
-  const int total_sales_value = read_positive_integer(
+  const float total_sales_value = read_positive_float(
     "Digite o valor total de vendas: ", 
       "Insira um total de vendas válido."
     );
-  const int fixed_salary = read_positive_integer(
+  const float fixed_salary = read_positive_float(
     "Digite o valor do salário fixo: ", 
       "Insira um salário válido."
     );
