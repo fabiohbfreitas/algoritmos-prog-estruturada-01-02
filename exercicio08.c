@@ -26,7 +26,7 @@ int main() {
     "Digite o valor do salário fixo: ", 
       "Insira um salário válido."
     );
-  const float commission_per_car = read_percentual(
+  const int commission_per_car = read_positive_integer(
     "Digite o valor da comissão por carro: ", 
       "Insira uma comissão válida."
     );
