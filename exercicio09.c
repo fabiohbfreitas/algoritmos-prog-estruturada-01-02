@@ -19,7 +19,7 @@ int main() {
   {
     char prompt[32];
     sprintf(prompt, "Digite a nota %d: ", i + 1);
-    const int nth_grade = read_positive_integer(
+    const float nth_grade = read_positive_float(
       prompt, 
       "Digite uma nota válida."
     );
